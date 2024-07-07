@@ -61,3 +61,25 @@ int main()
     printf("Average TurnAround Time = %f\n", avgturnaroundtime);
     return 0;
 }
+
+/*$ gcc scheduling/fcfs.c 
+wishall@fedora:~/os$ ./a.out 
+Enter the number of processes: 3
+Assuming Arrival time is 0 for all processes
+Process number 0
+Burst Time:24
+Process number 1
+Burst Time:3
+Process number 2
+Burst Time:4
+
+The Table is:
+
+PID     AT      BT      WT      TAT
+0       0       24      0       24
+1       0       3       24      27
+2       0       4       27      31
+
+Average Waiting Time = 17.000000
+Average TurnAround Time = 27.333334
+wishall@fedora:~/os$ */

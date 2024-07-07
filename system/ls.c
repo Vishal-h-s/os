@@ -13,7 +13,7 @@ int main(int argc,char*argv[]){
     }
 
     struct dirent*entry;
-    printf("pid=%d\n",getpid());
+    // printf("pid=%d\n",getpid());
     while((entry=readdir(dir))!=NULL){
         printf("%s\t",entry->d_name);
     }printf("\n");
