@@ -14,12 +14,8 @@ int main()
         return 1;
     }
     else if (pid > 0)
-    {
         printf("Hello I am Parent process pid=%d, child pid=%d\n", getpid(), pid);
-    }
     else
-    {
         printf("Hello I am child process pid=%d\n", getpid());
-    }
     return 0;
 }
